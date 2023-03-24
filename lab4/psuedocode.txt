@@ -1,0 +1,58 @@
+class Hand {
+
+
+    int Human;
+    String type;
+
+    //constructor
+
+    public String getType() {
+
+        return this.type; //returns just substring of first two characters.
+    }
+
+}
+
+
+class Main {
+
+    public void main(String[] args) {
+ 	int syllables = readinput();
+        int numPlayers = readinput();
+	
+	LinkedList<Hand> list = new LinkedList<Hand>();
+
+	for (i=1;i<= numPlayers;i++) {
+	list.add(new Hand(i, "folded");
+	}
+        
+	while (list.size() != 1) {
+ 		skips = list.size() % syllables
+
+		for (i=0; i<skips;i++) {
+			hand = list.poll();
+			list.offer(hand); 
+		}
+	
+		hand = list.poll();
+		human = hand.getHuman();
+		str = hand.getType();
+
+		if (str.equals("folded")) {
+			list.addFirst(new Hand(human, "fist");
+			list.addFirst(new Hand(human, "fist"));
+		} else if (str.equals("fist")) {
+			list.addFirst(new Hand(human, "palm"));
+		} else if (str.equals("palm") {
+			list.addFirst(new Hand(human, "back"));
+		} else {
+			// do nth
+		}
+	
+	} //only 1 element left
+	System.out.println(list.poll().getHuman());
+
+   }
+}
+
+   	
