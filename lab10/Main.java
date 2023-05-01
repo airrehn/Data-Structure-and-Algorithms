@@ -42,6 +42,8 @@ class IntegerTriple implements Comparable<IntegerTriple> {
 
 
   public class Main {
+
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
@@ -93,4 +95,6 @@ class IntegerTriple implements Comparable<IntegerTriple> {
           }
         }
       }
+
+      
   }

@@ -46,7 +46,7 @@ public class Main {
         Queue<IntegerPair> queue= new LinkedList<IntegerPair>();
 
         for(int i=0; i<rows;i++) {
-            for (int j =0; j<columns;j++) {
+            for (int j=0; j<columns;j++) {
                 char type = planet[i][j];
                 IntegerPair coords = new IntegerPair(i, j);
                 if (type == 'L' && visit[i][j]==false) {
